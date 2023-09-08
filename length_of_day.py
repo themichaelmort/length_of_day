@@ -18,7 +18,6 @@ winter_day_lengths = []
 summer_solstice = datetime.date(2024, 6, 20)
 winter_solstice = datetime.date(2023, 12, 21)
 for sun in sun_times:
-
     summer_day_lengths.append((sun.get_local_sunset_time(summer_solstice) - sun.get_local_sunrise_time(summer_solstice)).total_seconds()/3600)
     winter_day_lengths.append((sun.get_local_sunset_time(winter_solstice) - sun.get_local_sunrise_time(winter_solstice)).total_seconds()/3600)
 
